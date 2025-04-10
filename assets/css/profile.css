@@ -1,0 +1,120 @@
+/* Profile Card - Full Width */
+.profile-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 20px 40px;
+    width: 100vw;
+    /* Occupy full viewport width */
+    max-width: 100%;
+    /* Ensures it doesn't exceed screen width */
+    overflow-x: hidden;
+    /* Prevents horizontal scrolling */
+}
+
+/* Profile Image - Circular with Mask */
+.profile-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50" fill="white"/></svg>');
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="50" fill="white"/></svg>');
+    margin-right: 15px;
+}
+
+/* Profile Details - Full Flex */
+.profile-info {
+    flex-grow: 1;
+    padding: 10px 20px;
+    min-width: 150px;
+    /* Ensures minimum size on smaller screens */
+}
+
+.profile-info p {
+    margin: 2px 0;
+    color: #707070;
+    font-size: 14px;
+}
+
+.profile-info .greeting {
+    font-style: italic;
+    font-weight: bold;
+    color: #B5B47E;
+    font-size: 1em !important;
+}
+
+/* Badge Style */
+.badge {
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    border: 1px solid #B5B47E;
+    background: #FAF9E4;
+    color: #6D6C42;
+}
+
+/* Stats Section */
+.stats {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    flex-grow: 1;
+}
+
+.stats div {
+    text-align: center;
+}
+
+.stats span {
+    font-size: 14px;
+    font-weight: bold;
+    color: #6D6C42;
+}
+
+/* Buttons Section */
+.buttons {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    white-space: nowrap;
+}
+
+.btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btn-yellow {
+    background-color: #D3D354;
+    color: black;
+}
+
+.btn-dark {
+    background-color: #3F4926;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .profile-image {
+        margin: 0 auto 10px;
+    }
+
+    .stats,
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
