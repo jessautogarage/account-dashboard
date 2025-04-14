@@ -1,105 +1,58 @@
-/* Main Container */
-.availability-container {
-    margin: 20px auto;
-    background: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    /* Make it fully responsive */
-    overflow-x: auto;
-}
-
-/* Title */
-.availability-title {
-    color: #8ca12e;
-    font-size: 22px;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-/* Info Section */
-.availability-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #fcf8e3;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-bottom: 15px;
-}
-
-.highlight {
-    color: red;
-    font-weight: bold;
-}
-
-.currency {
-    color: #d35400;
-}
-
-/* Submit Button */
-.submit-btn {
-    background-color: #4a5a2b;
-    color: white;
-    padding: 8px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-}
-
-.submit-btn:hover {
-    background-color: #36491e;
-}
-
-/* Navigation */
-.navigation {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 0;
-    font-size: 14px;
-}
-
-.nav-link {
-    color: #8ca12e;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.nav-link:hover {
-    text-decoration: underline;
-}
-
-/* Table Container */
+/* Container styling */
 .availability-table-container {
+    width: 100%;
     overflow-x: auto;
+    padding: 10px;
 }
 
-/* Table Styles */
+/* Table styles */
 .availability-table {
     width: 100%;
-    /* Ensure the table fills its container */
     border-collapse: collapse;
     table-layout: fixed;
-    /* Prevents uneven column widths */
+    font-family: Arial, sans-serif;
 }
 
 .availability-table th,
 .availability-table td {
-    border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
-    white-space: nowrap;
-    /* Prevents wrapping of text */
-}
-
-.availability-table th {
-    background-color: #f1f1f1;
+    border: 1px solid #ddd;
     font-size: 14px;
 }
 
-.closed {
-    color: red;
+/* Time Column */
+.availability-table .time-slot {
     font-weight: bold;
+    background-color: #f4f4f4;
+}
+
+/* Closed Slots */
+.availability-table .closed {
+    color: red;
+    position: relative;
+}
+
+/* Open Slots */
+.availability-table .open {
+    color: green;
+    font-weight: bold;
+}
+
+/* Styling inside each cell */
+.availability-table .status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Scroll bar for responsiveness */
+.availability-table-container::-webkit-scrollbar {
+    height: 5px;
+}
+
+.availability-table-container::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 10px;
 }
