@@ -1,0 +1,95 @@
+.mtp-wrapper {
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    margin: 30px auto;
+    padding: 1.5em;
+}
+
+.mtp-wrapper h2 {
+    color: #4B5320;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+}
+
+.mtp-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+/* Left: form takes about 55% of space */
+.mtp-left {
+    flex: 1 1 55%;
+    min-width: 300px;
+}
+
+/* Right: photo + video takes 40% */
+.mtp-right {
+    flex: 1 1 40%;
+}
+
+/* Form rows */
+.mtp-row {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.mtp-row label {
+    width: 160px;
+}
+
+.mtp-row input[type="text"],
+.mtp-row input[type="email"],
+.mtp-row input[type="url"],
+.mtp-row input[type="password"],
+.mtp-row input[type="file"] {
+    flex: 1;
+    padding: 6px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.mtp-row input[readonly] {
+    background-color: #f5f5f5;
+}
+
+.save-button {
+    background-color: #464F27;
+    color: #fff;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.save-button:hover {
+    background-color: #3a411d;
+}
+
+/* Media container: photo + video aligned side-by-side */
+.mtp-media-group {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+/* Image + video equal size */
+.mtp-photo img,
+.mtp-video iframe {
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Ensure both blocks respect same width */
+.mtp-photo,
+.mtp-video {
+    width: 250px;
+}

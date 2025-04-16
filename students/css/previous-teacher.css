@@ -1,0 +1,93 @@
+.tutor-card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    padding: 20px;
+  }
+  
+  .tutor-card {
+    width: 280px;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    font-family: "Segoe UI", sans-serif;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-photo {
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .card-tags {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    z-index: 2;
+  }
+  
+  .tag {
+    font-size: 12px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: 600;
+    display: inline-block;
+    width: fit-content;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+  
+  .subject {
+    background-color: #4b5320;
+    color: #fff;
+  }
+  
+  .role {
+    background-color: #f1f1dc;
+    color: #4b5320;
+  }
+  
+  .card-info {
+    border-top: 4px solid #d9d95c;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .tutor-name {
+    margin: 0 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .card-link {
+    color: #4b5320;
+    text-decoration: underline;
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+  
+  .card-rating {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: auto;
+  }
+  
+  .card-rating .star-icon {
+    width: 18px;
+    height: 18px;
+  }
+  

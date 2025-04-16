@@ -1,0 +1,109 @@
+/* student-booking.css */
+
+.modal {
+    position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.4); z-index: 9999; display: flex;
+    justify-content: center; align-items: center;
+}
+.modal-overlay {
+    position: absolute; width: 100%; height: 100%; top: 0; left: 0;
+}
+.modal-content {
+    background: #fff; padding: 24px 28px; border-radius: 10px;
+    position: relative; width: 400px; max-width: 90%; z-index: 10000;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); font-family: sans-serif;
+}
+.modal-close {
+    position: absolute; top: 10px; right: 12px;
+    background: none; border: none; font-size: 24px;
+    color: #888; cursor: pointer;
+}
+.modal-title {
+    font-size: 20px; margin-bottom: 8px;
+}
+.modal-subtext {
+    font-size: 14px; color: #666; margin-bottom: 16px;
+}
+.modal-content label {
+    font-size: 14px; display: block; margin-bottom: 6px;
+}
+.modal-content select {
+    width: 100%; padding: 8px; font-size: 14px;
+    border: 1px solid #ccc; border-radius: 6px;
+}
+.modal-button {
+    background-color: #2e7d32; color: #fff;
+    padding: 10px 16px; border: none;
+    border-radius: 6px; font-size: 15px;
+    margin-top: 16px; cursor: pointer;
+    width: 100%;
+    transition: background 0.2s ease;
+}
+.modal-button:hover {
+    background-color: #1b5e20;
+}
+.modal-price {
+    font-size: 14px; color: #444;
+}
+.tutor-profile-container {
+    background: #f9f9f9;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.tutor-profile-container p {
+    margin: 4px 0;
+}
+.availability-table-container {
+    margin-top: 20px;
+}
+.availability-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+.availability-table th, .availability-table td {
+    border: 1px solid #eee;
+    padding: 6px;
+    font-size: 13px;
+}
+.availability-table .time {
+    font-weight: bold;
+    background: #f5f5f5;
+}
+.availability-table .date {
+    font-weight: bold;
+}
+.availability-table .day {
+    color: #777;
+    font-size: 12px;
+}
+.available-tutor {
+    background: #e0f7fa;
+    padding: 6px;
+    margin: 4px 0;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #00796b;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    display: block;
+}
+.available-tutor:hover {
+    background: #b2ebf2;
+}
+.booked-by-me {
+    background-color: #c8e6c9 !important;
+    color: #2e7d32 !important;
+}
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.nav-link {
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: bold;
+}

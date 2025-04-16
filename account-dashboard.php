@@ -25,6 +25,8 @@ class MyPluginLoader {
         $this->load_all_files('tutors/');
         $this->load_all_files('students/');
         $this->load_all_files('classroom/');
+
+        $this->load_all_files('ajax-handler/');
     }
 
     private function load_all_files($directory) {
@@ -88,7 +90,7 @@ function login_redirect_by_user($redirect_to, $request, $user) {
         } elseif (in_array('parent', $user->roles)) {
             return home_url('/parents/lesson-management/my-childs-classes/');
         } elseif (in_array('student', $user->roles)) {
-            return home_url('/student/lesson-management/my-booked-class/');
+            return home_url('/student/lesson-management/my-calendar/');
         } 
     }
     // Default redirect to the homepage if no role matches

@@ -1,0 +1,139 @@
+.student-profile-wrapper {
+    font-family: Arial, sans-serif;
+    width: 100%;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.profile-title {
+    color: #D4DB4E;
+    font-weight: 600;
+    font-size: 22px;
+    letter-spacing: 0.5px;
+    margin-bottom: 1.5rem;
+}
+
+.student-profile-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.left,
+.right {
+    flex: 1 1 48%;
+}
+
+.profile-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.profile-field label {
+    width: 160px;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.profile-field input[type="text"],
+.profile-field input[type="email"],
+.profile-field input[type="file"] {
+    flex: 1;
+    padding: 6px 8px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: transparent;
+}
+
+.profile-field input[readonly] {
+    background-color: #f9f9f9;
+}
+
+.mtp-edit-icon {
+    margin-left: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #666;
+}
+
+/* RIGHT SIDE CONTENT */
+.right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.profile-photo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.student-avatar {
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+}
+
+.photo-input {
+    margin-top: 8px;
+}
+
+.profile-meta p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.profile-meta input[type="text"] {
+    width: 100%;
+    padding: 6px 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 4px;
+}
+
+/* SUBJECTS TABLE */
+.subjects-table {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.subjects-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.subjects-table th,
+.subjects-table td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    text-align: center;
+}
+
+.subjects-table th {
+    background-color: #f7f7f7;
+}
+
+/* BUTTON */
+.add-subject-btn {
+    background-color: white;
+    color: black;
+    border: 1px solid #aaa;
+    padding: 6px 12px;
+    font-size: 13px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 8px;
+}
